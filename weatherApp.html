@@ -1,0 +1,61 @@
+<!--
+   Beginning of Weather App
+   
+   Also requires files:
+   	css/weather.css
+   	img/"partlyCloudy.png"
+   -->
+   <html>
+   <head>
+   	<title>Weather App</title>
+   	<!-- get bootstrap over the internet -->
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   	<link rel="stylesheet" href="css/weather.css">
+   </link>
+</head>
+<body>
+	<!-- Bootstrap always begins with a container -->
+	<div class="container text-center">
+		<br><br><br>
+		<div class="row-fluid">
+			<h1 class="pull-center"><strong>Weather App</strong></h1>
+			<p class="lead pull-center">Made by Ling Pei Li</p>
+		</div>
+		<!-- the app appears in a single row -->	
+		<div class="row">
+			<!-- 4 columns wide and moved over 4 columns = centered --> 
+			<div class="col-sm-4 col-sm-offset-4" id="weather_app">
+				<!-- now the actual contents; nested in that middle chunk -->	
+				<!-- top row fills up all 12 columns of inner grid -->
+				<div class="row">
+					<div class="span5 offsetHalf block" id = "container">
+						<!-- fills up 8 columns, moved over 2 = centered -->
+						<div class="col-sm-8 col-sm-offset-2">
+							<form  class="form-horizontal" action = "widget3.html" method="get">
+								<div class="form-group">
+									<div class="input-group">
+										<input id = "zipCodeInput" type="text" class="form-control" placeholder="Enter a zipcode">
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="button" onClick = "btnClicked()">Forecast!</button>
+										</span>
+									</div>
+									<!-- /input-group -->
+									<div class="span5 offsetHalf block" id = "forecast"></div>
+								</div>
+							</form>
+						</div>
+						<!-- column --> 
+					</div>
+					<!-- last row -->
+				</div>
+				<!-- column of enclosing row -->
+				<!-- the horizontal line -->
+				<a href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/purple.png" width="134" height="29"/> </a>
+			</div>
+		</div>
+	</div>
+	<!-- container -->
+	<script src="./js/weather.js"></script>
+</body>
+</html>

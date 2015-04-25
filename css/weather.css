@@ -1,0 +1,20 @@
+body {
+	background: url('https://download.unsplash.com/uploads/14134890947503c6effdc/72adf455') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+}
+
+.block {
+	display: table;
+	background-color:rgba(0,0,0,0.1);
+    
+  	padding-left:12px;
+  	padding-right:12px;
+  	padding-top:20px;
+  	padding-bottom:50px;
+  	margin-bottom: 50px;
+}
+
